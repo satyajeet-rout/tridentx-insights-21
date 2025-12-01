@@ -263,7 +263,6 @@ const Contact = () => {
     <h3 className="text-xl font-bold flex items-center gap-2">
       US Headquarters
     </h3>
-    <p className="text-sm text-foreground/70">21727 SE 3rd Pl, Sammamish, WA 98074</p>
   </div>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d172037.06377825903!2d-122.17136205!3d47.605736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549071fcfd8aaf6f%3A0xa60c3a839b1f7c8e!2s21727%20SE%203rd%20Pl%2C%20Sammamish%2C%20WA%2098074!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
@@ -284,9 +283,8 @@ const Contact = () => {
     <h3 className="text-xl font-bold flex items-center gap-2">
       APAC Office
     </h3>
-    <p className="text-sm text-foreground/70">ATM 07, Iconic Tower, Urbtech Trade Center, Sec. 132, Noida - UP 201304</p>
   </div>
-  <iframe
+  {/* <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112173.0399551981!2d77.31119!3d28.505184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37eb7f1dbb3e1c8d!2sUrbtech%20Trade%20Centre!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
     width="100%"
     height="350"
@@ -296,7 +294,19 @@ const Contact = () => {
     referrerPolicy="no-referrer-when-downgrade"
     title="India Office Location"
     className="transition-all duration-500"
-  />
+  /> */}
+              
+              <iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56075.72375046183!2d77.30646221953128!3d28.547752012109385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce627eaaaaaab%3A0x1683188e18dcfc43!2sUrbtech%20Trade%20Centre!5e0!3m2!1sen!2sin!4v1764609556230!5m2!1sen!2sin"
+  width="100%"
+  height="350"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="Urbtech Trade Centre Location"
+/>
+
 </Card>
           </div>
         </div>
