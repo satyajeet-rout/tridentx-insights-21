@@ -146,7 +146,7 @@ const Offerings = () => {
         <div className="container mx-auto px-6">
           <div className="max-w-4xl mx-auto text-center">
             <p className="text-2xl md:text-3xl font-medium text-foreground/90 italic mb-8">
-              "TRIDENTX transforms companies' approach to digital strategy, enabling them to thrive in a competitive market. Our expertise makes all the difference!"
+              "TRIDENTX transforms companies approach to digital strategy, enabling them to thrive in a competitive market. Our expertise makes all the difference!"
             </p>
             <div className="flex items-center justify-center gap-4">
               <img 
@@ -156,7 +156,7 @@ const Offerings = () => {
               />
               <div className="text-left">
                 <p className="font-semibold">Kerry Baker</p>
-                <p className="text-foreground/60 text-sm">Founder & CEO</p>
+                <p className="text-foreground/60 text-sm">Strategy & Marketing Advisor</p>
               </div>
             </div>
           </div>
