@@ -15,6 +15,14 @@ import {
   Search
 } from "lucide-react";
 
+
+import GA from "@/assets/team/GA.jpg";
+import KB from "@/assets/team/KB.jpg";
+import JS from "@/assets/team/JS.jpg";
+import SS from "@/assets/team/SS.jpg";
+import KY from "@/assets/team/KY.jpg";
+import SR from "@/assets/team/SR.jpg";
+
 const globalTeam = [
   {
     name: "Gurtaj S Alag",
@@ -33,6 +41,12 @@ const globalTeam = [
     role: "Delivery & Operations Head",
     linkedin: "https://www.linkedin.com/in/jang-singh-b599624/",
     initials: "JS"
+  },
+    {
+    name: "Shruti Sathe",
+    role: "Principle Engineer",
+    linkedin: "",
+    initials: "SS"
   }
 ];
 
@@ -42,6 +56,12 @@ const apacTeam = [
     role: "Business Development",
     linkedin: "https://www.linkedin.com/in/kajal-yadav-690736317/",
     initials: "KY"
+  },
+    {
+    name: "SatyaJeet Rout",
+    role: "AI ML Telecom Engineer",
+    linkedin: "https://www.linkedin.com/in/satyajeetrout98/",
+    initials: "SR"
   }
 ];
 
@@ -162,7 +182,7 @@ const About = () => {
       </section>
 
       {/* Global Team Section */}
-      <section className="py-20">
+      {/* <section className="py-20">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12 animate-fade-in">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -197,10 +217,10 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* APAC Team Section */}
-      <section className="py-20 bg-muted/30">
+      {/* <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12 animate-fade-in">
             <div className="flex items-center justify-center gap-3 mb-4">
@@ -234,7 +254,110 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
+
+      {/* Global Team – Perfectly Rounded Photos */}
+<section className="py-20">
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-16 animate-fade-in">
+      <div className="flex items-center justify-center gap-3 mb-4">
+        <Globe className="h-10 w-10 text-primary" />
+        <h2 className="text-4xl md:text-5xl font-bold">Global Team</h2>
+      </div>
+      <p className="text-foreground/70 text-lg">Strategic leadership driving worldwide transformation</p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 max-w-7xl mx-auto">
+      {[
+        { name: "Gurtaj S Alag", role: "Founder & CEO", linkedin: "https://www.linkedin.com/in/gurtaj-alag-026872b/", img: GA },
+        { name: "Kerry Baker", role: "Strategy & Marketing Advisor", linkedin: "https://www.linkedin.com/in/kerry-wm-baker/", img: KB },
+        { name: "Jang Singh", role: "Delivery & Operations Head", linkedin: "https://www.linkedin.com/in/jang-singh-b599624/", img: JS },
+        { name: "Shruti Sathe", role: "Principle Engineer", linkedin: "", img: SS }
+      ].map((member, index) => (
+        <div 
+          key={index} 
+          className="group text-center animate-fade-in-up"
+          style={{ animationDelay: `${index * 0.1}s` }}
+        >
+          {/* Perfect Circle Photo with Subtle Hover Glow */}
+          <div className="relative mb-6 mx-auto w-fit">
+            <img
+              src={member.img}
+              alt={member.name}
+              className="w-48 h-48 rounded-full object-cover border-4 border-white/20 shadow-2xl 
+                         group-hover:border-primary/50 group-hover:scale-105 transition-all duration-300"
+              loading="lazy"
+            />
+            {/* Optional pink glow on hover */}
+            <div className="absolute inset-0 rounded-full shadow-[0_0_40px_rgba(236,72,153,0.5)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          </div>
+
+          {/* Name & Role */}
+          {member.linkedin ? (
+            <a 
+              href={member.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block text-2xl font-bold text-white hover:text-primary transition-colors"
+            >
+              {member.name}
+            </a>
+          ) : (
+            <p className="text-2xl font-bold text-white">{member.name}</p>
+          )}
+          <p className="text-primary text-lg mt-2">{member.role}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+{/* APAC Team – Same Beautiful Rounded Style */}
+<section className="py-20 bg-muted/30">
+  <div className="container mx-auto px-6">
+    <div className="text-center mb-16 animate-fade-in">
+      <div className="flex items-center justify-center gap-3 mb-4">
+        <MapPin className="h-10 w-10 text-accent" />
+        <h2 className="text-4xl md:text-5xl font-bold">APAC Team</h2>
+      </div>
+      <p className="text-foreground/70 text-lg">Regional excellence powering Asia-Pacific growth</p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
+      {[
+        { name: "Kajal Yadav", role: "Business Development", linkedin: "https://www.linkedin.com/in/kajal-yadav-690736317/", img: KY },
+        { name: "SatyaJeet Rout", role: "AI ML Telecom Engineer", linkedin: "https://www.linkedin.com/in/satyajeetrout98/", img: SR }
+      ].map((member, index) => (
+        <div 
+          key={index} 
+          className="group text-center animate-fade-in-up"
+          style={{ animationDelay: `${index * 0.15}s` }}
+        >
+          <div className="relative mb-6 mx-auto w-fit">
+            <img
+              src={member.img}
+              alt={member.name}
+              className="w-48 h-48 rounded-full object-cover border-4 border-white/20 shadow-2xl 
+                         group-hover:border-accent/50 group-hover:scale-105 transition-all duration-300"
+              loading="lazy"
+            />
+            <div className="absolute inset-0 rounded-full shadow-[0_0_40px_rgba(236,72,153,0.5)] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
+          </div>
+
+          <a 
+            href={member.linkedin} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block text-2xl font-bold text-white hover:text-accent transition-colors"
+          >
+            {member.name}
+          </a>
+          <p className="text-accent text-lg mt-2">{member.role}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* Core Values */}
       <section className="py-20">
