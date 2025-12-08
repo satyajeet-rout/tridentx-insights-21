@@ -168,7 +168,7 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-bold mb-2">Business Hours</h3>
                     <p className="text-foreground/70 mb-1">Monday - Friday</p>
-                    <p className="text-foreground/70">9:00 AM - 6:00 PM (PST)</p>
+                    <p className="text-foreground/70">9:00 AM - 6:00 PM</p>
                   </div>
                 </div>
               </Card>
