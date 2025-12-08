@@ -119,7 +119,7 @@ export const Footer = () => {
           </Link>
 
           {/* Navigation Links */}
-          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm">
+          {/* <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm">
             <Link to="/" className="text-white/70 hover:text-primary transition-colors">
               Home
             </Link>
@@ -135,11 +135,11 @@ export const Footer = () => {
             <Link to="/contact" className="text-white/70 hover:text-primary transition-colors">
               Contact
             </Link>
-          </div>
+          </div> */}
 
           {/* Copyright */}
           <p className="text-sm text-white/50">
-            © 2025 TridentX. All rights reserved.
+            © 2025 TRIDENTX. All rights reserved.
           </p>
         </div>
       </div>
