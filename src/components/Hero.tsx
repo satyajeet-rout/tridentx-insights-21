@@ -376,15 +376,8 @@ export const Hero = () => {
             Global Boutique
           </span>
           <br />
-          {/* <span 
-            className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400
-                       font-black tracking-tight
-                       drop-shadow-[0_15px_35px_rgba(0,0,0,0.95)]
-                       [text-shadow:0_15px_40px_rgba(0,0,0,0.9)_0_0_20px_#ec4899_0_0_40px_#a855f7]"
-          >
-            Consulting
-          </span> */}
-          <span className="relative font-black tracking-tight text-white">
+          
+          <span className="relative  tracking-tight text-white">
             <span className="absolute inset-0 -z-10 bg-black/40 blur-[12px] rounded-lg"></span>
             Consulting
           </span>

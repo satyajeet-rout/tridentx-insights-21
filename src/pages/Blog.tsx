@@ -586,7 +586,7 @@ const Blog = () => {
                     <img
                       src={latestPost.image}
                       alt={latestPost.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      className="w-full group-hover:scale-105 transition-transform duration-700 mt-12"
                     />
                   </div>
                   <div className="p-10 md:p-16 flex flex-col justify-center">

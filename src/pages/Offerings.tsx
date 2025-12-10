@@ -571,7 +571,7 @@ const Offerings = () => {
                 />
               </div>
               <div>
-                <p className="text-primary text-sm font-semibold tracking-wider uppercase mb-2">
+                <p className="text-primary text-xl font-bold tracking-wider uppercase mb-2">
                   Vertical integration, horizontal scaling, serving the community
                 </p>
                 <h2 className="text-4xl font-bold mb-6">Strategy</h2>
@@ -592,38 +592,65 @@ const Offerings = () => {
           <div className="container mx-auto px-6">
             <div className="space-y-24 max-w-6xl mx-auto">
               {services.map((service, index) => (
-                <div 
-                  key={index}
-                  className={`grid lg:grid-cols-2 gap-12 items-center ${service.reverse ? 'lg:flex-row-reverse' : ''}`}
-                >
-                  <div>
-                    <span className="text-6xl font-bold text-primary/70">{service.number}</span>
-                    <h3 className="text-3xl font-bold mb-3 -mt-4">{service.title}</h3>
-                    <p className="text-primary font-medium mb-6">{service.subtitle}</p>
-                    <ul className="space-y-3 mb-8">
-                      {service.features.map((feature, idx) => (
-                        <li key={idx} className="flex items-start gap-3 text-white/80">
-                          <span className="text-primary font-bold">({idx + 1})</span>
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-                    <Button variant="outline" className="group border-white/30 hover:bg-white/10">
-                      Get Started
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </div>
+  <div
+    key={index}
+    className={`grid lg:grid-cols-2 gap-12 lg:gap-20 items-center max-w-7xl mx-auto ${
+      service.reverse ? "lg:flex-row-reverse" : ""
+    }`}
+  >
+    {/* Text Content */}
+    <div className="space-y-8">
+      {/* Number + Title on the Same Line */}
+      <div className="flex items-baseline gap-6 md:gap-8">
+        <span className="text-7xl md:text-8xl font-black text-primary/90 select-none leading-none">
+          {service.number}
+        </span>
+        <h3 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight">
+          {service.title}
+        </h3>
+      </div>
 
-                  <div>
-                    <img 
-                      src={service.image} 
-                      alt={service.title}
-                      className="rounded-2xl shadow-xl w-full object-cover max-h-[500px]"
-                      loading="lazy"
-                    />
-                  </div>
-                </div>
-              ))}
+      {/* Subtitle */}
+      <p className="text-primary font-semibold text-lg md:text-xl ml-28 md:ml-32 lg:ml-36">
+        {service.subtitle}
+      </p>
+
+      {/* Features List */}
+      <ul className="space-y-5 ml-28 md:ml-32 lg:ml-36">
+        {service.features.map((feature, idx) => (
+          <li key={idx} className="flex items-start gap-4 text-white/85 text-lg">
+            <span className="text-primary font-bold text-sm mt-1.5 shrink-0">
+              ({idx + 1})
+            </span>
+            <span>{feature}</span>
+          </li>
+        ))}
+      </ul>
+
+      {/* CTA Button */}
+      <div className="ml-28 md:ml-32 lg:ml-36">
+        <Button
+          variant="outline"
+          size="lg"
+          className="group border-white/30 hover:bg-white/10 hover:border-primary transition-all"
+        >
+          Explore {service.title}
+          <ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-2 transition-transform" />
+        </Button>
+      </div>
+    </div>
+
+    {/* Image */}
+    <div className="order-first lg:order-last">
+      <img
+        src={service.image}
+        alt={service.title}
+        className="rounded-2xl shadow-2xl w-full object-cover max-h-[560px] border border-white/10"
+        loading="lazy"
+      />
+    </div>
+  </div>
+))}
             </div>
           </div>
         </section>
