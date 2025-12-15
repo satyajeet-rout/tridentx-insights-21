@@ -476,7 +476,8 @@ import { ArrowRight } from "lucide-react";
 // Background & Assets
 import galaxyBg from "@/assets/galaxy-wallpaper.jpg";
 import trishulxImage from "@/assets/TRISHULX-1.webp";   // ← Your custom image
-
+import solutionx from "@/assets/solutionx.png";
+import nocx from "@/assets/nocx.png";
 const services = [
   {
     number: "01",
@@ -486,7 +487,7 @@ const services = [
       "Field Services: Design, Deployment, Optimization",
       "Wireless Network, Fiber, Data Centers"
     ],
-    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&h=1012&fit=crop",
+    image: solutionx,
     reverse: false
   },
   {
@@ -497,7 +498,7 @@ const services = [
       "24x7x365 tiered support",
       "Powered by PLATFORMX"
     ],
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1280&h=784&fit=crop",
+    image: nocx,
     reverse: true
   },
   {
