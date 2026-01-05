@@ -49,7 +49,7 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "TridentX Contact <noreply@tridentx.xyz>",
+        from: "TRIDENTX Contact <noreply@tridentx.xyz>",
         to: ["contact@tridentxapac.xyz"],
         reply_to: email,
         subject: `New Contact Form: ${subject}`,
@@ -83,9 +83,9 @@ const handler = async (req: Request): Promise<Response> => {
         Authorization: `Bearer ${RESEND_API_KEY}`,
       },
       body: JSON.stringify({
-        from: "TridentX <noreply@tridentx.xyz>",
+        from: "TRIDENTX <noreply@tridentx.xyz>",
         to: [email],
-        subject: "Thank you for contacting TridentX!",
+        subject: "Thank you for contacting TRIDENTX!",
         html: `
           <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
             <h1 style="color: #ec4899;">Thank you for reaching out, ${firstName}!</h1>
@@ -95,7 +95,7 @@ const handler = async (req: Request): Promise<Response> => {
             <p><strong>Subject:</strong> ${subject}</p>
             <p>${message.replace(/\n/g, "<br />")}</p>
             <hr style="border: 1px solid #eee; margin: 20px 0;" />
-            <p style="color: #666;">Best regards,<br />The TridentX Team</p>
+            <p style="color: #666;">Best regards,<br />The TRIDENTX Team</p>
             <p style="font-size: 12px; color: #999;">
               This is an automated response. Please do not reply directly to this email.
             </p>
