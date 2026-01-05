@@ -41,7 +41,7 @@ const handler = async (req: Request): Promise<Response> => {
       );
     }
 
-    // Send notification email to TridentX team
+    // Send notification email to TRIDENTX team
     const notificationRes = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {

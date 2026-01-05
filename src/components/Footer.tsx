@@ -14,7 +14,7 @@ export const Footer = () => {
           <Link to="/" className="flex items-center">
             <img 
               src={footerLogo} 
-              alt="TridentX" 
+              alt="TRIDENTX" 
               className="h-11 w-auto brightness-110"   // slight brightness boost for extra pop
             />
           </Link>

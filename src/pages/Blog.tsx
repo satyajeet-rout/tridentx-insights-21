@@ -70,7 +70,7 @@ const Blog = () => {
         <section className="pt-32 pb-20 text-center">
           <div className="container mx-auto px-6">
             <h1 className="text-6xl md:text-7xl font-black mb-6 text-white drop-shadow-2xl">
-              TridentX <span className="text-glow">Blog</span>
+              TRIDENTX <span className="text-glow">Blog</span>
             </h1>
             <p className="text-2xl text-purple-200 max-w-3xl mx-auto font-light">
               Insights • Innovations • Future Thinking

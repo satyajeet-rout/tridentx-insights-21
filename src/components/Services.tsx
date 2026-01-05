@@ -52,7 +52,7 @@ export const Services = () => {
           <div className="relative max-w-6xl mx-auto">
             <img
               src={solutionImage}
-              alt="TridentX Solution Aggregator & Manageability Partner"
+              alt="TRIDENTX Solution Aggregator & Manageability Partner"
               className="w-full h-auto rounded-2xl shadow-2xl border border-white/10 object-cover"
               loading="lazy"
             />

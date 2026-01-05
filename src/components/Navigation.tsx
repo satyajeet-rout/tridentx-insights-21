@@ -29,7 +29,7 @@ export const Navigation = () => {
           <Link to="/" className="flex items-center">
             <img 
               src={yourLogo} 
-              alt="TridentX" 
+              alt="TRIDENTX" 
               className="h-11 w-auto brightness-110"
             />
           </Link>
@@ -84,7 +84,7 @@ export const Navigation = () => {
           <div className="flex flex-col h-full pt-24 px-8 pb-8">
             {/* Mobile Logo (optional) */}
             <div className="mb-12">
-              <img src={yourLogo} alt="TridentX" className="h-10 w-auto brightness-110 mx-auto" />
+              <img src={yourLogo} alt="TRIDENTX" className="h-10 w-auto brightness-110 mx-auto" />
             </div>
 
             {/* Mobile Links */}
