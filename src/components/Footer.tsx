@@ -40,7 +40,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-white/50">
-            © 2025 TRIDENTX. All rights reserved.
+            © 2026 TRIDENTX. All rights reserved.
           </p>
         </div>
       </div>
